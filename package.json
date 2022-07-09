@@ -1,0 +1,42 @@
+{
+  "name": "@endbug/dynamr",
+  "version": "1.0.0",
+  "description": "Wrapper for the DynamR controller API",
+  "main": "./build/index.js",
+  "types": "./build",
+  "module": "./index.mjs",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./build/index.js"
+  },
+  "scripts": {
+    "build": "rimraf build && tsc -p tsconfig.build.json",
+    "build:prepare": "path-exists ./build || npm run build",
+    "lint": "gts lint",
+    "prepare": "npm run build:prepare",
+    "test": "jest",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "pretest": "npm run build",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndBug/dynamr.git"
+  },
+  "author": "Federico Grandi <fgrandi30@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EndBug/dynamr/issues"
+  },
+  "homepage": "https://github.com/EndBug/dynamr#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "gts": "^3.1.0",
+    "jest": "^28.1.2",
+    "path-exists-cli": "^2.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  }
+}
