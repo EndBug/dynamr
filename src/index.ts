@@ -1,5 +1,14 @@
 import axios, {AxiosResponse} from 'axios';
 
+export interface DynamROptions {
+  /** The protocol to use */
+  protocol?: 'http' | 'https';
+  /** The DynamR server's address */
+  hostname?: string;
+  /** The DynamR server's port */
+  port?: string;
+}
+
 export interface Payload {
   procedure: string;
   args?: any[];
@@ -208,10 +217,10 @@ export default class DynamR {
   hostname: string;
   port: string;
 
-  constructor() {
-    this.protocol = 'http';
-    this.hostname = 'dynamr.local';
-    this.port = '8080';
+  constructor(options?: DynamROptions) {
+    this.protocol = options?.protocol ?? 'http';
+    this.hostname = options?.hostname ?? 'dynamr.local';
+    this.port = options?.port ?? '8080';
   }
 
   private _createRequest(method: string, endpoint: string, data: string) {
