@@ -1,4 +1,4 @@
-import DynamR from '../src';
+import {DynamR} from '../src';
 import {DynamROptions} from '../src';
 import axios from 'axios';
 
