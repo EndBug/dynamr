@@ -4,11 +4,6 @@
   "description": "Wrapper for the DynamR controller API",
   "main": "./build/index.js",
   "types": "./build",
-  "module": "./index.mjs",
-  "exports": {
-    "import": "./index.mjs",
-    "require": "./build/index.js"
-  },
   "scripts": {
     "build": "rimraf build && tsc -p tsconfig.build.json",
     "build:prepare": "path-exists ./build || npm run build",
@@ -33,11 +28,6 @@
     "ts-jest": "^28.0.5",
     "typescript": "4.4.x"
   },
-  "files": [
-    "build",
-    "index.mjs",
-    "src"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EndBug/dynamr.git"
