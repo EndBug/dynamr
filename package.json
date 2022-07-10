@@ -2,8 +2,8 @@
   "name": "@endbug/dynamr",
   "version": "1.0.2",
   "description": "Wrapper for the DynamR controller API",
-  "main": "./build/index.js",
-  "types": "./build",
+  "main": "build/index.js",
+  "types": "build",
   "scripts": {
     "build": "rimraf build && tsc -p tsconfig.build.json",
     "build:prepare": "path-exists ./build || npm run build",
