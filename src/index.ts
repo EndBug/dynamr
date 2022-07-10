@@ -212,7 +212,7 @@ interface NetworkFailure extends AxiosResponse {
  * @see https://www.dynamr.com/en/tech/_bottom/dynamr_user_guide.pdf
  * @see https://www.dynamr.com/en/tech/_bottom/dynamr_api_doc.pdf
  */
-export default class DynamR {
+export class DynamR {
   protocol: 'http' | 'https';
   hostname: string;
   port: string;

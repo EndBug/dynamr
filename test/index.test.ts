@@ -1,4 +1,4 @@
-import DynamR, {DynamROptions} from '../src';
+import {DynamR, DynamROptions} from '../src';
 import axios from 'axios';
 
 jest.mock('axios');
