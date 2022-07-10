@@ -1,6 +1,6 @@
 {
   "name": "@endbug/dynamr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper for the DynamR controller API",
   "main": "./build/index.js",
   "types": "./build",
