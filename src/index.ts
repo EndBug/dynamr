@@ -209,8 +209,8 @@ interface NetworkFailure extends AxiosResponse {
 /**
  * This class contains methods for each API endpoint.
  * Refer to the offical manuals for details.
- * @see https://www.dynamr.com/en/tech/_bottom/dynamr_user_guide.pdf
- * @see https://www.dynamr.com/en/tech/_bottom/dynamr_api_doc.pdf
+ * @see https://docs.google.com/document/d/11zYqI7WV49YWBew6dyXWNPCuNHHK3IRhykTtMVSmvfQ
+ * @see https://docs.google.com/document/d/15Ez0mxv8RAcY6AhZKYmGrU6iiezubTqgft2GZndNrao
  */
 export class DynamR {
   protocol: 'http' | 'https';
