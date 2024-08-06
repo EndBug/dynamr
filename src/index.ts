@@ -250,7 +250,7 @@ export class DynamR {
   /** Gets the current presets. */
   getPresets() {
     return this._send<GetPresetsResponse>({
-      procedure: '"com.dynamr.light_preset.all',
+      procedure: 'com.dynamr.light_preset.all',
     });
   }
 
@@ -264,7 +264,7 @@ export class DynamR {
   /** Sets the lights using a preset. */
   setLightPreset(presetName: string) {
     return this._send<SetLightPresetResponse>({
-      procedure: 'com.dynamr.output.light.preset',
+      procedure: 'com.dynamr.light.preset',
       args: [presetName],
     });
   }
@@ -274,7 +274,7 @@ export class DynamR {
    */
   setLightColor(colorHex: string) {
     return this._send<SetLightColorResponse>({
-      procedure: 'com.dynamr.output.light.color',
+      procedure: 'com.dynamr.light.color',
       args: [colorHex],
     });
   }
