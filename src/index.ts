@@ -244,7 +244,7 @@ export class DynamR {
       JSON.stringify(data)
     );
 
-    return JSON.parse(res.data);
+    return res.data;
   }
 
   /** Gets the current presets. */
