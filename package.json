@@ -16,7 +16,7 @@
     "posttest": "npm run lint"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.7.3"
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
