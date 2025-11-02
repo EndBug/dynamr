@@ -4,6 +4,11 @@ on:
     types: [published]
   workflow_dispatch:
 
+permissions:
+  # See https://docs.npmjs.com/trusted-publishers
+  id-token: write
+  contents: read
+
 jobs:
   publish-npm:
     name: Publish on NPM
